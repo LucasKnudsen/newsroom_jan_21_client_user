@@ -1,5 +1,5 @@
 
- App = () => {
+ const App = () => {
   return (
     <div className="App">
     </div>
