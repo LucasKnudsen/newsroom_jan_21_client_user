@@ -33,7 +33,6 @@ describe('Displays list of story articles', () => {
         })
       })
     })
-
   })
 
   describe('unsuccessfully with no connection', () => {
@@ -42,10 +41,15 @@ describe('Displays list of story articles', () => {
         method: 'GET',
         url: 'http://localhost:3000/api/articles?*',
         response: {
-          message: "Invalid article type. Try story or experience."
-        }
+          message: "Request failed with status code 500"
+        },
+        status: 500
       })
+      cy.visit('/')
+    })
+
+    it('displays an error message', () => {
+      cy.get('[data-cy="error-message"]').should('contain', 'Request failed with status code 500')
     })
   })
-
 })

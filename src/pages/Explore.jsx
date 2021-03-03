@@ -1,12 +1,15 @@
 import React from 'react'
 import ExploreList from '../components/ExploreList'
-import { Header, Grid} from 'semantic-ui-react'
+import { Header, Grid, Icon} from 'semantic-ui-react'
 
 const Explore = () => {
   return (
     <Grid>
       <Grid.Row centered textAlign="center">
-        <Header className="explore-header">Explore</Header>
+        <Header className="explore-header">
+          <Icon circular name="map signs" size="tiny" />
+          <Header.Content>Explore</Header.Content>
+        </Header>
       </Grid.Row>
       <Grid.Row centered>
         <ExploreList />
