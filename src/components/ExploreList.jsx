@@ -1,14 +1,14 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import { Item, Segment, Header, Message } from 'semantic-ui-react'
-import {getExploreArticles} from '../modules/dataCenter'
+import { getExploreArticles } from '../modules/dataCenter'
 
-const ExploreList = () => {
+const ExploreList = ({articleType}) => {
   const [articles, setArticles] = useState([])
   const [errorMessage, setErrorMessage] = useState()
 
   const fetchData = async () => {
     try {
-    let response = await getExploreArticles()
+      let response = await getExploreArticles(articleType)
       setArticles(response)
     } catch (error) {
       setErrorMessage(error.message)
@@ -17,13 +17,13 @@ const ExploreList = () => {
 
   useEffect(() => {
     fetchData()
-  }, [])
+  },[articleType])
 
   const articleList = articles.map((article, i) => {
     return (
-      <Item data-cy="explore-item" data-id={`explore-item-${i+1}`} key={i+1} >
+      <Item data-cy="explore-item" data-id={`explore-item-${i + 1}`} key={i + 1} >
         <Item.Content>
-          <Item.Header data-cy="title">{article.title }</Item.Header>
+          <Item.Header data-cy="title">{article.title}</Item.Header>
           <Item.Meta data-cy="date">Published on: {article.date}</Item.Meta>
           <Item.Description data-cy="teaser">{article.teaser}</Item.Description>
         </Item.Content>
@@ -33,14 +33,16 @@ const ExploreList = () => {
 
   return (
     <Segment textAlign="left">
-      <Header className="explore-list-header">Latest Stories</Header>
+      <Header className="explore-list-header">
+        Latest {articleType === 'story' ? 'Stories' : 'Experiences'}
+      </Header>
       {errorMessage ? (
-        <Message data-cy="error-message" header={errorMessage}/>
-      ): (
-        <Item.Group divided data-cy="explore-list">
-        {articleList}
-      </Item.Group>
-      )}
+        <Message data-cy="error-message" header={errorMessage} />
+      ) : (
+          <Item.Group divided data-cy="explore-list">
+            {articleList}
+          </Item.Group>
+        )}
     </Segment>
   )
 }

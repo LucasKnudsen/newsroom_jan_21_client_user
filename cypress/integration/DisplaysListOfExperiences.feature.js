@@ -4,13 +4,13 @@ describe('Displays list of story articles', () => {
   })
   describe('successfully', () => {
     beforeEach(() => {
+      cy.visit('/')
       cy.route({
         method: 'GET',
         url: 'http://localhost:3000/api/articles?*',
         response: 'fixture:experiencesList.json'
       })
-      cy.visit('/')
-      cy.get('[data-cy="explore-experiences"]').click()
+      cy.get('[data-cy="experience-button"]').click()
     })
 
     it('displays the page header', () => {
