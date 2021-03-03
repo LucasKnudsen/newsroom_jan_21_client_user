@@ -1,0 +1,39 @@
+{
+  "articles": [
+      {
+          "id": 5,
+          "title": "Story Test 5",
+          "teaser": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "article_type": "story",
+          "created_at": "2021-03-03T12:45:34.657Z"
+      },
+      {
+          "id": 4,
+          "title": "Story Test 4",
+          "teaser": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "article_type": "story",
+          "created_at": "2021-03-03T12:45:34.653Z"
+      },
+      {
+          "id": 3,
+          "title": "Story Test 3",
+          "teaser": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "article_type": "story",
+          "created_at": "2021-03-03T12:45:34.649Z"
+      },
+      {
+          "id": 2,
+          "title": "Story Test 2",
+          "teaser": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "article_type": "story",
+          "created_at": "2021-03-03T12:45:34.645Z"
+      },
+      {
+          "id": 1,
+          "title": "Story Test 1",
+          "teaser": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "article_type": "story",
+          "created_at": "2021-03-03T12:45:34.638Z"
+      }
+  ]
+}
