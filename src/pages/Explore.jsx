@@ -1,12 +1,16 @@
 import React from 'react'
-import { Header, Grid, Item } from 'semantic-ui-react'
+import ExploreList from '../components/ExploreList'
+import { Header, Grid} from 'semantic-ui-react'
 
 const Explore = () => {
   return (
     <Grid>
-      <Grid.Row>
+      <Grid.Row centered textAlign="center">
         <Header className="explore-header">Explore</Header>
       </Grid.Row>
+      <Grid.Row centered>
+        <ExploreList />
+      </Grid.Row> 
     </Grid>
   )
 }

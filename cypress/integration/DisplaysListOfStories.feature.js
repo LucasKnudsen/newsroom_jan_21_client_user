@@ -1,12 +1,15 @@
 describe('Displays list of story articles', () => {
+  beforeEach(() => {
+    cy.server()
+  })
   describe('successfully', () => {
     beforeEach(() => {
-      cy.server()
       cy.route({
         method: 'GET',
-        url: 'http://localhost:3000/api/articles',
-        response: 'fixtures:storiesList.json'
+        url: 'http://localhost:3000/api/articles?*',
+        response: 'fixture:storiesList.json'
       })
+      cy.visit('/')
     })
 
     it('displays the page header', () => {
@@ -18,29 +21,26 @@ describe('Displays list of story articles', () => {
     })
 
     it('renders a list of 5 articles', () => {
-      cy.get('[data-cy="explore-list"]').within(() => {
-        cy.find('[data-cy="explore-item"]').should('have.length', 5)
-      })
+      cy.get('[data-cy="explore-list"]').find('[data-cy="explore-item"]').should('have.length', 5)
     })
 
     it('articles are displayed containing expected information', () => {
       cy.get('[data-cy="explore-list"]').within(() => {
-        cy.get('[data-id="explore-item-1]').within(() => {
+        cy.get('[data-id="explore-item-1"]').within(() => {
           cy.get('[data-cy="title"]').should('contain', 'Story Test 5')
           cy.get('[data-cy="teaser"]').should('contain', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')
-          cy.get('[data-cy="date"]').should('contain', '2021-03-03')
+          cy.get('[data-cy="date"]').should('contain', 'Published on: 2021-03-03')
         })
       })
     })
 
   })
 
-  describe('unsuccessfully with faulty params', () => {
+  describe('unsuccessfully with no connection', () => {
     beforeEach(() => {
-      cy.server()
       cy.route({
         method: 'GET',
-        url: 'http://localhost:3000/api/articles',
+        url: 'http://localhost:3000/api/articles?*',
         response: {
           message: "Invalid article type. Try story or experience."
         }
@@ -48,16 +48,4 @@ describe('Displays list of story articles', () => {
     })
   })
 
-  describe('unsuccessfully with no params', () => {
-    beforeEach(() => {
-      cy.server()
-      cy.route({
-        method: 'GET',
-        url: 'http://localhost:3000/api/articles',
-        response: {
-          message: "Needs specification for type of article!"
-        }
-      })
-    })
-  })
 })
