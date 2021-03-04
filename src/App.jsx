@@ -5,7 +5,6 @@ import './app.css';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 const App = () => {
-  debugger
   return (
     <Router>
       <Switch>

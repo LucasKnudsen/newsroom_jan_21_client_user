@@ -2,6 +2,7 @@ import axios from 'axios'
 
 const getSingleArticle = async (id) => {
   let response = await axios.get(`/articles/${id}`)
+  return response.data.article
 }
 
 const getExploreArticles = async (articleType) => {
@@ -9,4 +10,4 @@ const getExploreArticles = async (articleType) => {
   return response.data.articles
 }
 
-export { getExploreArticles }
+export { getExploreArticles, getSingleArticle }

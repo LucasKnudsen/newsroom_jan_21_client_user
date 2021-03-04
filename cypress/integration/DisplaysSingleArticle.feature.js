@@ -13,7 +13,7 @@ describe('client displays single article', () => {
         response: 'fixture:singleArticle.json'
       })
       cy.visit('/')
-      cy.get('[data-cy="explore-item-2"]').click()
+      cy.get('[data-id="explore-item-4"]').click()
     })
 
     it('links to expected URI', () => {

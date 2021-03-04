@@ -12,3 +12,15 @@
 .ui.header>.icon {
   font-size: 1em!important;
 }
+
+.logo {
+  cursor: pointer;
+}
+
+.ui.text.container {
+  margin-top: 50px;
+}
+
+#root {
+  min-height: 100vh!important;
+}
