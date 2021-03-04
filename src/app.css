@@ -1,0 +1,14 @@
+.ui.header.explore-header {
+  padding-top: 25px;
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+.ui.header.explore-list-header {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.ui.header>.icon {
+  font-size: 1em!important;
+}
