@@ -6,7 +6,7 @@ const Explore = () => {
   return (
     <Grid>
       <Grid.Row centered textAlign="center">
-        <Header className="explore-header">
+        <Header className="explore-header" data-cy="explore-header">
           <Icon circular name="map signs" size="tiny" />
           <Header.Content>Explore</Header.Content>
         </Header>
