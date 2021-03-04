@@ -1,24 +1,29 @@
-describe('Displays list of story articles', () => {
+describe('Displays list of experience articles', () => {
   beforeEach(() => {
     cy.server()
   })
   describe('successfully', () => {
     beforeEach(() => {
+      cy.route({
+        method: 'GET',
+        url: 'http://localhost:3000/api/articles?article_type=story',
+        response: 'fixture:storiesList.json'
+      })
       cy.visit('/')
       cy.route({
         method: 'GET',
-        url: 'http://localhost:3000/api/articles?*',
+        url: 'http://localhost:3000/api/articles?article_type=experience',
         response: 'fixture:experiencesList.json'
       })
       cy.get('[data-cy="experience-button"]').click()
     })
 
     it('displays the page header', () => {
-      cy.get('.explore-header').should('contain', 'Explore')
+      cy.get('[data-cy="explore-header"]').should('contain', 'Explore')
     })
 
     it('displays the list header', () => {
-      cy.get('.explore-list-header').should('contain', 'Latest Experiences')
+      cy.get('[data-cy="explore-list-header"]').should('contain', 'Latest Experiences')
     })
 
     it('renders a list of 5 articles', () => {
@@ -40,13 +45,19 @@ describe('Displays list of story articles', () => {
     beforeEach(() => {
       cy.route({
         method: 'GET',
-        url: 'http://localhost:3000/api/articles?*',
+        url: 'http://localhost:3000/api/articles?article_type=story',
+        response: 'fixture:storiesList.json'
+      })
+      cy.route({
+        method: 'GET',
+        url: 'http://localhost:3000/api/articles?article_type=experience',
         response: {
           message: "Request failed with status code 500"
         },
         status: 500
       })
       cy.visit('/')
+      cy.get('[data-cy="experience-button"]').click()
     })
 
     it('displays an error message', () => {

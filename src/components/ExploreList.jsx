@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import { Item, Segment, Header, Message } from 'semantic-ui-react'
-import { getExploreArticles } from '../modules/dataCenter'
+import {getExploreArticles} from '../modules/articlesDataModule'
 
 const ExploreList = ({articleType}) => {
   const [articles, setArticles] = useState([])
   const [errorMessage, setErrorMessage] = useState()
 
-  const fetchData = async () => {
+  useEffect(() => {
+    const fetchData = async () => {
     try {
       let response = await getExploreArticles(articleType)
       setArticles(response)
@@ -14,8 +15,6 @@ const ExploreList = ({articleType}) => {
       setErrorMessage(error.message)
     }
   }
-
-  useEffect(() => {
     fetchData()
   },[articleType])
 
@@ -33,7 +32,7 @@ const ExploreList = ({articleType}) => {
 
   return (
     <Segment textAlign="left">
-      <Header className="explore-list-header">
+      <Header className="explore-list-header" data-cy="explore-list-header">
         Latest {articleType === 'story' ? 'Stories' : 'Experiences'}
       </Header>
       {errorMessage ? (
