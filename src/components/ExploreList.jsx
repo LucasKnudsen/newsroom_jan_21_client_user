@@ -1,22 +1,24 @@
 import React, { useState, useEffect } from 'react'
 import { Item, Segment, Header, Message } from 'semantic-ui-react'
-import {getExploreArticles} from '../modules/articlesDataModule'
+import { getExploreArticles } from '../modules/articlesDataModule'
+import { useSelector } from 'react-redux'
 
-const ExploreList = ({articleType}) => {
+const ExploreList = () => {
   const [articles, setArticles] = useState([])
   const [errorMessage, setErrorMessage] = useState()
+  const articleType = useSelector(state => state)
 
   useEffect(() => {
     const fetchData = async () => {
-    try {
-      let response = await getExploreArticles(articleType)
-      setArticles(response)
-    } catch (error) {
-      setErrorMessage(error.message)
+      try {
+        let response = await getExploreArticles(articleType)
+        setArticles(response)
+      } catch (error) {
+        setErrorMessage(error.message)
+      }
     }
-  }
     fetchData()
-  },[articleType])
+  }, [articleType])
 
   const articleList = articles.map((article, i) => {
     return (
