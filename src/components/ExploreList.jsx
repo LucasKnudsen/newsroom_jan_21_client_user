@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Item, Segment, Header, Message } from 'semantic-ui-react'
-import { getExploreArticles } from '../modules/dataCenter'
+import {getExploreArticles} from '../modules/articlesDataModule'
 
 const ExploreList = ({articleType}) => {
   const [articles, setArticles] = useState([])
@@ -33,7 +33,7 @@ const ExploreList = ({articleType}) => {
 
   return (
     <Segment textAlign="left">
-      <Header className="explore-list-header">
+      <Header className="explore-list-header" data-cy="explore-list-header">
         Latest {articleType === 'story' ? 'Stories' : 'Experiences'}
       </Header>
       {errorMessage ? (
