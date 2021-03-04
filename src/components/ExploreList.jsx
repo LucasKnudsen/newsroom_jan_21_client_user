@@ -22,7 +22,7 @@ const ExploreList = () => {
 
   const articleList = articles.map((article, i) => {
     return (
-      <Item data-cy="explore-item" data-id={`explore-item-${i + 1}`} key={i + 1} >
+      <Item as='a' href={`http://localhost:3001/articles/${article.id}`} data-cy="explore-item" data-id={`explore-item-${i + 1}`} key={i + 1} >
         <Item.Content>
           <Item.Header data-cy="title">{article.title}</Item.Header>
           <Item.Meta data-cy="date">Published on: {article.date}</Item.Meta>
