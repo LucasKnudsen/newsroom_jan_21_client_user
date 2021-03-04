@@ -1,8 +1,8 @@
-import React from 'react'
-import Explore from './views/Explore'
-import './app.css'
+import React from 'react';
+import Explore from './views/Explore';
+import './app.css';
 
- const App = () => {
+const App = () => {
   return (
     <div>
       <Explore />

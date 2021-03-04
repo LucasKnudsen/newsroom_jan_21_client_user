@@ -6,7 +6,7 @@ describe('Displays list of story articles', () => {
     beforeEach(() => {
       cy.route({
         method: 'GET',
-        url: 'http://localhost:3000/api/articles?*',
+        url: 'http://localhost:3000/api/articles?article_type=story',
         response: 'fixture:storiesList.json'
       })
       cy.visit('/')
@@ -39,7 +39,7 @@ describe('Displays list of story articles', () => {
     beforeEach(() => {
       cy.route({
         method: 'GET',
-        url: 'http://localhost:3000/api/articles?*',
+        url: 'http://localhost:3000/api/articles?article_type=story',
         response: {
           message: "Request failed with status code 500"
         },

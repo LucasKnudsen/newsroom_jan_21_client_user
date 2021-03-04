@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import ExploreList from '../components/ExploreList'
 import { Header, Grid, Icon, Button } from 'semantic-ui-react'
+import store from '../state/store/configureStore'
 
 const Explore = () => {
-  const [articleType, setArticleType] = useState('story')
 
   return (
     <Grid>
@@ -14,14 +14,13 @@ const Explore = () => {
         </Header>
       </Grid.Row>
       <Grid.Row centered>
-        <Button data-cy="story-button" onClick={() => setArticleType('story')}>Stories</Button>
-        <Button data-cy="experience-button" onClick={() => setArticleType('experience')}>Experiences</Button>
+        <Button data-cy="story-button" onClick={() => store.dispatch({ type: "SET_ARTICLE_TYPE", payload: 'story'})}>Stories</Button>
+        <Button data-cy="experience-button" onClick={() => store.dispatch({ type: "SET_ARTICLE_TYPE", payload: 'experience' })}>Experiences</Button>
       </Grid.Row>
       <Grid.Row centered>
-        <ExploreList articleType={articleType} />
+        <ExploreList />
       </Grid.Row>
     </Grid>
   )
 }
-
 export default Explore
