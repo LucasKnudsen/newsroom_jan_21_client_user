@@ -13,11 +13,11 @@ describe('Displays list of story articles', () => {
     })
 
     it('displays the page header', () => {
-      cy.get('.explore-header').should('contain', 'Explore')
+      cy.get('[data-cy="explore-header"]').should('contain', 'Explore')
     })
 
     it('displays the list header', () => {
-      cy.get('.explore-list-header').should('contain', 'Latest Stories')
+      cy.get('[data-cy="explore-list-header"]').should('contain', 'Latest Stories')
     })
 
     it('renders a list of 5 articles', () => {
