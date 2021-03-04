@@ -6,12 +6,13 @@ import { useSelector } from 'react-redux'
 const ExploreList = () => {
   const [articles, setArticles] = useState([])
   const [errorMessage, setErrorMessage] = useState()
-  const articleType = useSelector(state => state)
+  const { articleType } = useSelector(state => state)
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         let response = await getExploreArticles(articleType)
+        debugger
         setArticles(response)
       } catch (error) {
         setErrorMessage(error.message)

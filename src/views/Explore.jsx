@@ -1,11 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import ExploreList from '../components/ExploreList'
 import { Header, Grid, Icon, Button } from 'semantic-ui-react'
 import store from '../state/store/configureStore'
 
 
 const Explore = () => {
-  // const [articleType, setArticleType] = useState('story')
 
   return (
     <Grid>

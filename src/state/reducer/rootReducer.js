@@ -1,4 +1,4 @@
-import { initialState } from '../store/initialState'
+import initialState from '../store/initialState'
 
 const rootReducer = (state = initialState, action) => {
   switch (action.type) {
@@ -8,6 +8,7 @@ const rootReducer = (state = initialState, action) => {
         articleType: 'story'
       }
     case "EXPERIENCE":
+      debugger
       return {
         ...state,
         articleType: 'experience'
