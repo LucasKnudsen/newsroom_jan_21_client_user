@@ -12,7 +12,6 @@ const ExploreList = () => {
     const fetchData = async () => {
       try {
         let response = await getExploreArticles(articleType)
-        debugger
         setArticles(response)
       } catch (error) {
         setErrorMessage(error.message)

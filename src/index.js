@@ -11,10 +11,9 @@ axios.defaults.baseURL = 'http://localhost:3000/api'
 
 ReactDOM.render(
   <Provider store={store}>
-  <App />
+    <App />
   </Provider>,
   document.getElementById('root')
-  
 );
 
 reportWebVitals();

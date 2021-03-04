@@ -5,4 +5,4 @@ const getExploreArticles = async (articleType) => {
   return response.data.articles
 }
 
-export {getExploreArticles}
+export { getExploreArticles }
