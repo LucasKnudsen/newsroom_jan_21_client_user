@@ -11,7 +11,7 @@ const NavBar = () => {
     <Grid className="nav-bar">
       <Image className="nav-logo" as='a' alt="logo" src={logo} href="/" data-cy="logo" />
       <Grid.Column verticalAlign="middle">
-        <Menu size="massive" pointing color="green" secondary vertical >
+        <Menu size="massive" pointing color="blue" secondary vertical >
           <Menu.Item
             data-cy="nav-home"
             name="get local"

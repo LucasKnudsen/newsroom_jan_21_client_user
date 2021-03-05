@@ -1,6 +1,7 @@
 const initialState = {
   articleType: "story",
   articles: [],
-  content: {}
+  content: {},
+  message: ''
 }
 export default initialState;

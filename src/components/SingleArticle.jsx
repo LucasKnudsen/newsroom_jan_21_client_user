@@ -11,10 +11,7 @@ const SingleArticle = () => {
   const { errorMessage } = useSelector(state => state)
 
   useEffect(() => {
-    const fetchData = async () => {
-      await getSingleArticle(id)
-    }
-    fetchData()
+    getSingleArticle(id)
   }, [id])
 
   return (

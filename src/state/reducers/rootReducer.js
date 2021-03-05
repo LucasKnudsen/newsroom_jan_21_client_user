@@ -8,10 +8,11 @@ const rootReducer = (state = initialState, action) => {
         articleType: action.payload,
         errorMessage: undefined
       }
-    case "EXPLORE_ARTICLES":
+    case "SET_ARTICLES":
       return {
         ...state,
-        articles: action.payload,
+        articles: action.payload.articles,
+        message: action.payload.message,
         errorMessage: undefined
       }
     case "SET_SINGLE_CONTENT":

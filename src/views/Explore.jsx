@@ -8,14 +8,14 @@ const Explore = () => {
   return (
     <Grid className="main-view">
       <Grid.Row centered textAlign="center">
-        <Header className="explore-header" data-cy="explore-header">
+        <Header className="main-header" data-cy="explore-header">
           <Icon circular name="map signs" size="tiny" />
           <Header.Content>Explore</Header.Content>
         </Header>
       </Grid.Row>
       <Grid.Row centered>
-        <Button data-cy="story-button" onClick={() => store.dispatch({ type: "SET_ARTICLE_TYPE", payload: 'story'})}>Stories</Button>
-        <Button data-cy="experience-button" onClick={() => store.dispatch({ type: "SET_ARTICLE_TYPE", payload: 'experience' })}>Experiences</Button>
+        <Button color="blue" data-cy="story-button" onClick={() => store.dispatch({ type: "SET_ARTICLE_TYPE", payload: 'story'})}>Stories</Button>
+        <Button color="blue" data-cy="experience-button" onClick={() => store.dispatch({ type: "SET_ARTICLE_TYPE", payload: 'experience' })}>Experiences</Button>
       </Grid.Row>
       <Grid.Row centered>
         <ExploreList />
