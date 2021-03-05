@@ -9,12 +9,17 @@
   padding-left: 10px;
 }
 
+.main-story {
+  margin-top: 33px!important;
+}
+
 .ui.image.nav-logo {
   position: absolute;
   width: 206px;
 }
 
 .main-view {
+  min-height: 100vh;
   margin-left: 206px!important;
   padding-right: 50px!important;
 }

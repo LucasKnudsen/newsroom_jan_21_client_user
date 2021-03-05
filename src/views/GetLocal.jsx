@@ -26,7 +26,7 @@ const GetLocal = () => {
         </Item.Group>
       </Grid.Column>
       <Grid.Column textAlign="center" width={6}>
-        <Header dividing className="sub-header">Stories</Header>
+        <Header dividing className="sub-header main-story">Stories</Header>
         <Item.Group data-cy="story-wrapper">
           <ArticleList articles={storyArticles} />
         </Item.Group>
