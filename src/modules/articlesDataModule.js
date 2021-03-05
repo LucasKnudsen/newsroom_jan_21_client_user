@@ -4,10 +4,8 @@ import store from '../state/store/configureStore'
 const getSingleArticle = async (id) => {
   try {
     let response = await axios.get(`/articles/${id}`)
-    debugger
     store.dispatch({type: "SET_SINGLE_CONTENT", payload: response.data.article}) 
   } catch (error) {
-    debugger 
     store.dispatch({
       type: "ERROR_HANDLER",
       payload: error.response ? error.response.data.message : error.message
@@ -25,7 +23,6 @@ const getExploreArticles = async (articleType) => {
       payload: error.response ? error.response.data.message : error.message
     })
   }
-
 }
 
 export { getExploreArticles, getSingleArticle }
