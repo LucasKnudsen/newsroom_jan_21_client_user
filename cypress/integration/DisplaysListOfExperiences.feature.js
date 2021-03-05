@@ -9,7 +9,7 @@ describe('Displays list of experience articles', () => {
         url: 'http://localhost:3000/api/articles?article_type=story',
         response: 'fixture:storiesList.json'
       })
-      cy.visit('/')
+      cy.visit('/explore')
       cy.route({
         method: 'GET',
         url: 'http://localhost:3000/api/articles?article_type=experience',
@@ -56,7 +56,7 @@ describe('Displays list of experience articles', () => {
         },
         status: 500
       })
-      cy.visit('/')
+      cy.visit('/explore')
       cy.get('[data-cy="experience-button"]').click()
     })
 

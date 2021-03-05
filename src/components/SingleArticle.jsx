@@ -1,9 +1,8 @@
 import React, { useEffect } from 'react';
-import { Container, Header, Segment, Button, Image } from 'semantic-ui-react'
+import { Container, Header, Segment, Button, Grid } from 'semantic-ui-react'
 import { useSelector } from 'react-redux'
 import { useParams, useHistory } from 'react-router-dom'
 import { getSingleArticle } from '../modules/articlesDataModule'
-import logo from '../assets/mainLogo.png'
 
 const SingleArticle = () => {
   const history = useHistory()
@@ -19,8 +18,7 @@ const SingleArticle = () => {
   }, [id])
 
   return (
-    <Segment textAlign="center" padded>
-      <Image className="logo" as='a' alt="logo" src={logo} href="/" data-cy="logo" />
+    <Grid className="main-view">
       <Container textAlign="left" text>
         <Segment stacked padded >
           {!errorMessage ? (
@@ -42,7 +40,7 @@ const SingleArticle = () => {
             )}
         </Segment>
       </Container >
-    </Segment>
+    </Grid>
   )
 }
 

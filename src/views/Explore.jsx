@@ -6,7 +6,7 @@ import store from '../state/store/configureStore'
 const Explore = () => {
 
   return (
-    <Grid>
+    <Grid className="main-view">
       <Grid.Row centered textAlign="center">
         <Header className="explore-header" data-cy="explore-header">
           <Icon circular name="map signs" size="tiny" />

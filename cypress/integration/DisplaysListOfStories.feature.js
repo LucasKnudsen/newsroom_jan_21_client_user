@@ -9,7 +9,7 @@ describe('Displays list of story articles', () => {
         url: 'http://localhost:3000/api/articles?article_type=story',
         response: 'fixture:storiesList.json'
       })
-      cy.visit('/')
+      cy.visit('/explore')
     })
 
     it('displays the page header', () => {
@@ -45,7 +45,7 @@ describe('Displays list of story articles', () => {
         },
         status: 500
       })
-      cy.visit('/')
+      cy.visit('/explore')
     })
 
     it('displays an error message', () => {
