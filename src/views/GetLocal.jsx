@@ -11,7 +11,7 @@ const GetLocal = () => {
   const storyArticles = articles.filter(article => article.article_type === 'story')
 
   useEffect(() => {
-   getLocationArticles()
+    getLocationArticles()
   }, [])
 
   return (
@@ -20,7 +20,7 @@ const GetLocal = () => {
         <Header dividing color="blue" className="main-header">
           Experiences
           <Header.Subheader data-cy="your-location">{message}</Header.Subheader>
-          </Header>
+        </Header>
         <Item.Group data-cy="experience-wrapper">
           <ArticleList articles={experienceArticles} />
         </Item.Group>

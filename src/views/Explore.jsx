@@ -14,7 +14,7 @@ const Explore = () => {
         </Header>
       </Grid.Row>
       <Grid.Row centered>
-        <Button color="blue" data-cy="story-button" onClick={() => store.dispatch({ type: "SET_ARTICLE_TYPE", payload: 'story'})}>Stories</Button>
+        <Button color="blue" data-cy="story-button" onClick={() => store.dispatch({ type: "SET_ARTICLE_TYPE", payload: 'story' })}>Stories</Button>
         <Button color="blue" data-cy="experience-button" onClick={() => store.dispatch({ type: "SET_ARTICLE_TYPE", payload: 'experience' })}>Experiences</Button>
       </Grid.Row>
       <Grid.Row centered>

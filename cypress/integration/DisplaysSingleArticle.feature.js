@@ -14,8 +14,8 @@ describe('client displays single article', () => {
         url: 'http://localhost:3000/api/articles/**',
         response: 'fixture:singleArticle.json'
       })
-      cy.visit('/')
-      cy.get('[data-id="explore-item-4"]').click()
+      cy.visit('/explore')
+      cy.get('[data-id="article-item-4"]').click()
     })
 
     it('links to expected URI', () => {

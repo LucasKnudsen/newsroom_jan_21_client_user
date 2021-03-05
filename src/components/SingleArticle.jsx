@@ -32,9 +32,9 @@ const SingleArticle = () => {
           ) : (
               <>
                 <Header as="h2" data-cy="not-found">{errorMessage}</Header>
-                <Button color="teal" data-cy="back-button" onClick={() => history.goBack()}>Go back?</Button>
               </>
             )}
+          <Button color="blue" data-cy="back-button" onClick={() => history.goBack()}>Go back?</Button>
         </Segment>
       </Container >
     </Grid>
