@@ -1,4 +1,6 @@
 const initialState = {
-  articleType: "story"
+  articleType: "story",
+  articles: [],
+  content: {}
 }
 export default initialState;

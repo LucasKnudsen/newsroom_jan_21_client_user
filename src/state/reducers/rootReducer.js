@@ -5,7 +5,25 @@ const rootReducer = (state = initialState, action) => {
     case "SET_ARTICLE_TYPE":
       return {
         ...state,
-        articleType: action.payload
+        articleType: action.payload,
+        errorMessage: undefined
+      }
+    case "EXPLORE_ARTICLES":
+      return {
+        ...state,
+        articles: action.payload,
+        errorMessage: undefined
+      }
+    case "SET_SINGLE_CONTENT":
+      return {
+        ...state,
+        content: action.payload,
+        errorMessage: undefined
+      }
+    case "ERROR_HANDLER":
+      return {
+        ...state,
+        errorMessage: action.payload
       }
     default:
       return state

@@ -1,13 +1,31 @@
 import axios from 'axios'
+import store from '../state/store/configureStore'
 
 const getSingleArticle = async (id) => {
-  let response = await axios.get(`/articles/${id}`)
-  return response.data.article
+  try {
+    let response = await axios.get(`/articles/${id}`)
+    debugger
+    store.dispatch({type: "SET_SINGLE_CONTENT", payload: response.data.article}) 
+  } catch (error) {
+    debugger 
+    store.dispatch({
+      type: "ERROR_HANDLER",
+      payload: error.response ? error.response.data.message : error.message
+    })
+  }
 }
 
 const getExploreArticles = async (articleType) => {
-  let response = await axios.get(`/articles?article_type=${articleType}`)
-  return response.data.articles
+  try {
+    let response = await axios.get(`/articles?article_type=${articleType}`)
+    store.dispatch({type: "EXPLORE_ARTICLES", payload: response.data.articles})
+  } catch (error) {
+    store.dispatch({
+      type: "ERROR_HANDLER",
+      payload: error.response ? error.response.data.message : error.message
+    })
+  }
+
 }
 
 export { getExploreArticles, getSingleArticle }

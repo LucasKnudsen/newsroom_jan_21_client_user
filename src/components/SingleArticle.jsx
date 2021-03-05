@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { Container, Header, Segment, Button, Image } from 'semantic-ui-react'
+import { useSelector } from 'react-redux'
 import { useParams, useHistory } from 'react-router-dom'
 import { getSingleArticle } from '../modules/articlesDataModule'
 import logo from '../assets/mainLogo.png'
@@ -7,17 +8,12 @@ import logo from '../assets/mainLogo.png'
 const SingleArticle = () => {
   const history = useHistory()
   const { id } = useParams()
-  const [content, setContent] = useState()
-  const [errorMessage, setErrorMessage] = useState()
+  const { content } = useSelector(state => state)
+  const { errorMessage } = useSelector(state => state)
 
   useEffect(() => {
     const fetchData = async () => {
-      try {
-        let response = await getSingleArticle(id)
-        setContent(response)
-      } catch (error) {
-        setErrorMessage(error.response ? error.response.data.message : error.message)
-      }
+      await getSingleArticle(id)
     }
     fetchData()
   }, [id])
@@ -27,7 +23,7 @@ const SingleArticle = () => {
       <Image className="logo" as='a' alt="logo" src={logo} href="/" data-cy="logo" />
       <Container textAlign="left" text>
         <Segment stacked padded >
-          {content ? (
+          {!errorMessage ? (
             <>
               <Header as="h1" data-cy="article-header" >
                 {content.title}
