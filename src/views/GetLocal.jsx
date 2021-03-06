@@ -15,7 +15,7 @@ const GetLocal = () => {
   }, [])
 
   return (
-    <Grid divided className="main-view" columns={2}>
+    <Grid divided className="main-view full-height" columns={2}>
       <Grid.Column width={10}>
         <Header dividing color="blue" className="main-header">
           Experiences

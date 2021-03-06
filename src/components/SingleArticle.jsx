@@ -22,8 +22,10 @@ const SingleArticle = () => {
             <>
               <Header as="h1" data-cy="article-header" >
                 {content.title}
-                <Header.Subheader data-cy="article-meta">
+                <Header.Subheader style={{ textTransform: 'capitalize' }} data-cy="article-meta">
                   Published: {content.date}
+                  <br />
+                  Category: {content.category}
                 </Header.Subheader>
                 <Header as="h4" data-cy="article-teaser">{content.teaser}</Header>
               </Header>
