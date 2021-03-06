@@ -42,4 +42,16 @@ const getLocationArticles = () => {
   }
 }
 
-export { getExploreArticles, getSingleArticle, getLocationArticles }
+const getByCategory = async (category) => {
+  try {
+    let response = await axios.get(`/articles?category=${category}`)
+    store.dispatch({ type: "SET_ARTICLES", payload: response.data })
+  } catch (error) {
+    store.dispatch({
+      type: "ERROR_HANDLER",
+      payload: error.response ? error.response.data.message : error.message
+    })
+  }
+}
+
+export { getExploreArticles, getSingleArticle, getLocationArticles, getByCategory }

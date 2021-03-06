@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { Item, Segment, Header, Message } from 'semantic-ui-react'
 import ArticleList from './ArticleList'
-import { getExploreArticles } from '../modules/articlesDataModule'
+import { getExploreArticles, getByCategory } from '../modules/articlesDataModule'
 import { useSelector } from 'react-redux'
 
 const ExploreList = () => {
