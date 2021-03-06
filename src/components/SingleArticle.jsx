@@ -1,9 +1,8 @@
 import React, { useEffect } from 'react';
-import { Container, Header, Segment, Button, Image } from 'semantic-ui-react'
+import { Container, Header, Segment, Button, Grid } from 'semantic-ui-react'
 import { useSelector } from 'react-redux'
 import { useParams, useHistory } from 'react-router-dom'
 import { getSingleArticle } from '../modules/articlesDataModule'
-import logo from '../assets/mainLogo.png'
 
 const SingleArticle = () => {
   const history = useHistory()
@@ -12,15 +11,11 @@ const SingleArticle = () => {
   const { errorMessage } = useSelector(state => state)
 
   useEffect(() => {
-    const fetchData = async () => {
-      await getSingleArticle(id)
-    }
-    fetchData()
+    getSingleArticle(id)
   }, [id])
 
   return (
-    <Segment textAlign="center" padded>
-      <Image className="logo" as='a' alt="logo" src={logo} href="/" data-cy="logo" />
+    <Grid className="main-view">
       <Container textAlign="left" text>
         <Segment stacked padded >
           {!errorMessage ? (
@@ -37,12 +32,12 @@ const SingleArticle = () => {
           ) : (
               <>
                 <Header as="h2" data-cy="not-found">{errorMessage}</Header>
-                <Button color="teal" data-cy="back-button" onClick={() => history.goBack()}>Go back?</Button>
               </>
             )}
+          <Button color="blue" data-cy="back-button" onClick={() => history.goBack()}>Go back?</Button>
         </Segment>
       </Container >
-    </Segment>
+    </Grid>
   )
 }
 
