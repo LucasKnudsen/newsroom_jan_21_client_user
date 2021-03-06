@@ -44,13 +44,18 @@ describe('can display articles based on category request', () => {
       })
       cy.route({
         method: 'GET',
-        url: 'http://localhost:3000/api/articles?category=events',
+        url: 'http://localhost:3000/api/articles?category=**',
         response: {
           message: 'Unfortunately we did not find any articles with this category.'
-        }
+        },
+        status: 404
       })
       cy.visit('/explore')
       cy.get('[data-cy="event-category-button"]').click()
+    })
+
+    it('displays an error message', () => {
+      cy.get('[data-cy="error-message"]').should('contain', 'Unfortunately we did not find any articles with this category.')
     })
   })
 })

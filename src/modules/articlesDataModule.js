@@ -26,20 +26,17 @@ const getExploreArticles = async (articleType) => {
 }
 
 const getLocationArticles = () => {
-  try {
-    navigator.geolocation.getCurrentPosition(async position => {
-      if (position.coords) {
-        let { latitude, longitude } = position.coords
-        let response = await axios.get(`/articles?lat=${latitude}&long=${longitude}`)
-        store.dispatch({ type: "SET_ARTICLES", payload: response.data })
-      } else {
-        let response = await axios.get(`/articles?lat=&long=`)
-        store.dispatch({ type: "SET_ARTICLES", payload: response.data })
-      }
-    })
-  } catch (error) {
-
-  }
+  navigator.geolocation.getCurrentPosition(async position => {
+    if (position.coords) {
+      let { latitude, longitude } = position.coords
+      let response = await axios.get(`/articles?lat=${latitude}&long=${longitude}`)
+      store.dispatch({ type: "SET_ARTICLES", payload: response.data })
+    } else {
+      let response = await axios.get(`/articles?lat=&long=`)
+      debugger
+      store.dispatch({ type: "SET_ARTICLES", payload: response.data })
+    }
+  })
 }
 
 const getByCategory = async (category) => {
