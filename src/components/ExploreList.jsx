@@ -14,18 +14,23 @@ const ExploreList = () => {
   }, [articleType])
 
   return (
-    <Segment textAlign="left">
-      <Header className="sub-header" data-cy="explore-list-header">
-        Latest {articleType === 'story' ? 'Stories' : 'Experiences'}
-      </Header>
-      {!errorMessage ? (
-        <Item.Group divided data-cy="explore-list">
-          <ArticleList articles={articles} />
-        </Item.Group>
-      ) : (
-          <Message data-cy="error-message" header={errorMessage} />
-        )}
-    </Segment>
+    <Segment.Group>
+      <Segment>
+        
+      </Segment>
+      <Segment textAlign="left">
+        <Header className="sub-header" data-cy="explore-list-header">
+          Latest {articleType === 'story' ? 'Stories' : 'Experiences'}
+        </Header>
+        {!errorMessage ? (
+          <Item.Group divided data-cy="explore-list">
+            <ArticleList articles={articles} />
+          </Item.Group>
+        ) : (
+            <Message data-cy="error-message" header={errorMessage} />
+          )}
+      </Segment>
+    </Segment.Group>
   )
 }
 
