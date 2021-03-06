@@ -35,7 +35,6 @@ const getLocationArticles = () => {
       } else {
         let response = await axios.get(`/articles?lat=&long=`)
         store.dispatch({ type: "SET_ARTICLES", payload: response.data })
-        debugger
       }
     })
   } catch (error) {
