@@ -5,70 +5,80 @@
           "title": "Experience Test 5",
           "teaser": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           "article_type": "experience",
-          "date": "2021-03-05"
+          "category": "food",
+          "date": "2021-03-07"
       },
       {
           "id": 9,
           "title": "Experience Test 4",
           "teaser": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           "article_type": "experience",
-          "date": "2021-03-05"
+          "category": "trip",
+          "date": "2021-03-07"
       },
       {
           "id": 8,
           "title": "Experience Test 3",
           "teaser": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           "article_type": "experience",
-          "date": "2021-03-05"
+          "category": "food",
+          "date": "2021-03-07"
       },
       {
           "id": 7,
           "title": "Experience Test 2",
           "teaser": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           "article_type": "experience",
-          "date": "2021-03-05"
+          "category": "trip",
+          "date": "2021-03-07"
       },
       {
           "id": 6,
           "title": "Experience Test 1",
           "teaser": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           "article_type": "experience",
-          "date": "2021-03-05"
+          "category": "food",
+          "date": "2021-03-07"
       },
       {
           "id": 5,
           "title": "Story Test 5",
           "teaser": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           "article_type": "story",
-          "date": "2021-03-05"
+          "category": "news",
+          "date": "2021-03-07"
       },
       {
           "id": 4,
           "title": "Story Test 4",
           "teaser": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           "article_type": "story",
-          "date": "2021-03-05"
+          "category": "event",
+          "date": "2021-03-07"
       },
       {
           "id": 3,
           "title": "Story Test 3",
           "teaser": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           "article_type": "story",
-          "date": "2021-03-05"
+          "category": "event",
+          "date": "2021-03-07"
       },
       {
           "id": 2,
           "title": "Story Test 2",
           "teaser": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           "article_type": "story",
-          "date": "2021-03-05"
+          "category": "news",
+          "date": "2021-03-07"
       },
       {
           "id": 1,
           "title": "Story Test 1",
           "teaser": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           "article_type": "story",
-          "date": "2021-03-05"
+          "category": "event",
+          "date": "2021-03-07"
       }
   ],
   "message": "We weren't able to get your location. Enjoy our latest articles instead!"
