@@ -1,9 +1,35 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ExploreList from '../components/ExploreList'
-import { Header, Grid, Icon, Button } from 'semantic-ui-react'
+import { Header, Grid, Icon, Button, Segment } from 'semantic-ui-react'
 import store from '../state/store/configureStore'
+import { getByCategory } from '../modules/articlesDataModule'
 
 const Explore = () => {
+  const [header, setHeader] = useState('Stories')
+
+  const switchHeader = (category) => {
+    switch (category) {
+      case 'story':
+        setHeader('Stories')
+        break;
+      case 'experience':
+        setHeader('Experiences')
+        break;
+      case 'news':
+        setHeader('News')
+        break;
+      case 'event':
+        setHeader('Events')
+        break;
+      case 'food':
+        setHeader('Foods')
+        break;
+      case 'trip':
+        setHeader('Trips')
+        break;
+      default:
+    }
+  }
 
   return (
     <Grid className="main-view">
@@ -14,11 +40,37 @@ const Explore = () => {
         </Header>
       </Grid.Row>
       <Grid.Row centered>
-        <Button color="blue" data-cy="story-button" onClick={() => store.dispatch({ type: "SET_ARTICLE_TYPE", payload: 'story' })}>Stories</Button>
-        <Button color="blue" data-cy="experience-button" onClick={() => store.dispatch({ type: "SET_ARTICLE_TYPE", payload: 'experience' })}>Experiences</Button>
+        <Button size="huge" color="blue" data-cy="story-button" onClick={() => {
+          store.dispatch({ type: "SET_ARTICLE_TYPE", payload: 'story' })
+          switchHeader('story')
+        }}>Stories</Button>
+        <Button size="huge" color="blue" data-cy="experience-button" onClick={() => {
+          store.dispatch({ type: "SET_ARTICLE_TYPE", payload: 'experience' })
+          switchHeader('experience')
+        }}>Experiences</Button>
       </Grid.Row>
       <Grid.Row centered>
-        <ExploreList />
+        <Segment.Group>
+          <Segment>
+            <Button data-cy="event-category-button" onClick={() => {
+              getByCategory('event')
+              switchHeader('event')
+            }}>Events</Button>
+            <Button data-cy="news-category-button" onClick={() => {
+              getByCategory('news')
+              switchHeader('news')
+            }}>News</Button>
+            <Button data-cy="food-category-button" onClick={() => {
+              getByCategory('food')
+              switchHeader('food')
+            }}>Food</Button>
+            <Button data-cy="trip-category-button" onClick={() => {
+              getByCategory('trip')
+              switchHeader('trip')
+            }}>Trips</Button>
+          </Segment>
+          <ExploreList header={header} />
+        </Segment.Group>
       </Grid.Row>
     </Grid>
   )

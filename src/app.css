@@ -19,9 +19,12 @@
 }
 
 .main-view {
-  min-height: 100vh;
   margin-left: 206px!important;
   padding-right: 50px!important;
+}
+
+.full-height {
+  min-height: 100vh;
 }
 
 .ui.header.main-header {

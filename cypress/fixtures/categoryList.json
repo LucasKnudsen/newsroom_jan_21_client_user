@@ -1,0 +1,28 @@
+{
+  "articles": [
+      {
+          "id": 4,
+          "title": "Story Test 4",
+          "teaser": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "article_type": "story",
+          "category": "event",
+          "date": "2021-03-06"
+      },
+      {
+          "id": 3,
+          "title": "Story Test 3",
+          "teaser": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "article_type": "story",
+          "category": "event",
+          "date": "2021-03-06"
+      },
+      {
+          "id": 1,
+          "title": "Story Test 1",
+          "teaser": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "article_type": "story",
+          "category": "event",
+          "date": "2021-03-06"
+      }
+  ]
+}
