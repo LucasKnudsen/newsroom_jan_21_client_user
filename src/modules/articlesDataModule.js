@@ -33,7 +33,6 @@ const getLocationArticles = () => {
       store.dispatch({ type: "SET_ARTICLES", payload: response.data })
     } else {
       let response = await axios.get(`/articles?lat=&long=`)
-      debugger
       store.dispatch({ type: "SET_ARTICLES", payload: response.data })
     }
   })
