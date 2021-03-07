@@ -1,34 +1,44 @@
 {
   "articles": [
       {
-          "id": 15,
+          "id": 10,
           "title": "Experience Test 5",
           "teaser": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "date": "2021-03-03"
+          "article_type": "experience",
+          "category": "food",
+          "date": "2021-03-07"
       },
       {
-          "id": 14,
+          "id": 9,
           "title": "Experience Test 4",
           "teaser": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "date": "2021-03-03"
+          "article_type": "experience",
+          "category": "trip",
+          "date": "2021-03-07"
       },
       {
-          "id": 13,
+          "id": 8,
           "title": "Experience Test 3",
           "teaser": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "date": "2021-03-03"
+          "article_type": "experience",
+          "category": "food",
+          "date": "2021-03-07"
       },
       {
-          "id": 12,
+          "id": 7,
           "title": "Experience Test 2",
           "teaser": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "date": "2021-03-03"
+          "article_type": "experience",
+          "category": "trip",
+          "date": "2021-03-07"
       },
       {
-          "id": 11,
+          "id": 6,
           "title": "Experience Test 1",
           "teaser": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "date": "2021-03-03"
+          "article_type": "experience",
+          "category": "food",
+          "date": "2021-03-07"
       }
   ]
 }

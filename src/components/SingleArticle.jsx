@@ -14,6 +14,15 @@ const SingleArticle = () => {
     getSingleArticle(id)
   }, [id])
 
+  let contentList
+  if (content.body) {
+    contentList = content.body.map(paragraph => {
+      return (
+        <p>{paragraph}</p>
+      )
+    })
+  }
+
   return (
     <Grid className="main-view">
       <Container textAlign="left" text>
@@ -29,7 +38,7 @@ const SingleArticle = () => {
                 </Header.Subheader>
                 <Header as="h4" data-cy="article-teaser">{content.teaser}</Header>
               </Header>
-              <p data-cy="article-body">{content.body}</p>
+              <p data-cy="article-body">{contentList}</p>
             </>
           ) : (
               <>
