@@ -69,7 +69,8 @@ describe('Front page displays articles based on location', () => {
         onBeforeLoad(window) {
           window.navigator.geolocation.getCurrentPosition = (callback) => {
             const err = new Error('User denied')
-            err.code = GeolocationPositionError.PERMISSION_DENIED
+            // err.code = GeolocationPositionError.PERMISSION_DENIED
+            err.code = 1
             callback(err)
           }
         }
