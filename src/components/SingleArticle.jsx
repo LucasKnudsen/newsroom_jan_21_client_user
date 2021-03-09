@@ -36,7 +36,7 @@ const SingleArticle = () => {
                   <br />
                   Category: {content.category}
                   <br />
-                  Author: {content.author.name}
+                  {content.author && `Author: ${content.author.name}`}
                 </Header.Subheader>
               </Header>
               <Image alt="article-image" src={content.image}/>
