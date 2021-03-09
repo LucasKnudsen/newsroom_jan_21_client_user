@@ -24,7 +24,7 @@ describe('client displays single article', () => {
 
     it('displays expected content', () => {
       cy.get('[data-cy="article-header"]').should('contain', 'Story Test 2')
-      cy.get('[data-cy="article-meta"]').should('contain', 'Published: 2021-03-07')
+      cy.get('[data-cy="article-meta"]').should('contain', 'Published: 2021-03-09')
       cy.get('[data-cy="article-teaser"]').should('contain', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')
       cy.get('[data-cy="article-body"]').should('contain', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi. Fringilla est ullamcorper eget nulla facilisi etiam. Et tortor consequat id porta nibh venenatis cras sed felis. Arcu dui vivamus arcu felis. Vitae semper quis lectus nulla at. Neque vitae tempus quam pellentesque nec nam. Adipiscing at in tellus integer feugiat scelerisque varius morbi enim. A iaculis at erat pellentesque. Neque volutpat ac tincidunt vitae semper quis lectus nulla at.')
     })
@@ -48,6 +48,7 @@ describe('client displays single article', () => {
     })
 
     it('displays an error message', () => {
+      cy.wait(1000)
       cy.get('[data-cy="not-found"]').should('contain', 'Article not found.')
     })
     

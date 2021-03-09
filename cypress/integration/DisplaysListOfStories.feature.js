@@ -29,7 +29,7 @@ describe('Displays list of story articles', () => {
         cy.get('[data-id="article-item-1"]').within(() => {
           cy.get('[data-cy="title"]').should('contain', 'Story Test 5')
           cy.get('[data-cy="teaser"]').should('contain', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')
-          cy.get('[data-cy="date"]').should('contain', 'Published on: 2021-03-07')
+          cy.get('[data-cy="date"]').should('contain', 'Published on: 2021-03-09')
         })
       })
     })
@@ -49,6 +49,7 @@ describe('Displays list of story articles', () => {
     })
 
     it('displays an error message', () => {
+      cy.wait(1000)
       cy.get('[data-cy="error-message"]').should('contain', 'Request failed with status code 500')
     })
   })

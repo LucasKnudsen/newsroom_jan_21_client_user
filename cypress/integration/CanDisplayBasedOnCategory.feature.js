@@ -29,7 +29,7 @@ describe('can display articles based on category request', () => {
         cy.get('[data-id="article-item-1"]').within(() => {
           cy.get('[data-cy="title"]').should('contain', 'Story Test 4')
           cy.get('[data-cy="teaser"]').should('contain', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')
-          cy.get('[data-cy="date"]').should('contain', 'Published on: 2021-03-06')
+          cy.get('[data-cy="date"]').should('contain', 'Published on: 2021-03-09')
         })
       })
     })
@@ -55,6 +55,7 @@ describe('can display articles based on category request', () => {
     })
 
     it('displays an error message', () => {
+      cy.wait(1000)
       cy.get('[data-cy="error-message"]').should('contain', 'Unfortunately we did not find any articles with this category.')
     })
   })

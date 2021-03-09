@@ -6,7 +6,8 @@
           "teaser": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           "article_type": "story",
           "category": "event",
-          "date": "2021-03-06"
+          "image": "https://news-room-team-1.s3.eu-north-1.amazonaws.com/403hv724j60t8dqg7vfxbw4ee8i1?response-content-disposition=inline%3B%20filename%3D%22seed_image.png%22%3B%20filename%2A%3DUTF-8%27%27seed_image.png&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIKNDI6ICZXWA675Q%2F20210309%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20210309T182101Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=9cf6092b8d9a2990b4bb41bebcaccf624303eb11d4b113531122cbc05d6f1669",
+          "date": "2021-03-09"
       },
       {
           "id": 3,
@@ -14,7 +15,8 @@
           "teaser": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           "article_type": "story",
           "category": "event",
-          "date": "2021-03-06"
+          "image": "https://news-room-team-1.s3.eu-north-1.amazonaws.com/jfjy5spx0f74jdw30ztvi4pjh3of?response-content-disposition=inline%3B%20filename%3D%22seed_image.png%22%3B%20filename%2A%3DUTF-8%27%27seed_image.png&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIKNDI6ICZXWA675Q%2F20210309%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20210309T182101Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=77dd40208035fca010600fd64a8b274de247ac0bb282945e40ade7eb96f55257",
+          "date": "2021-03-09"
       },
       {
           "id": 1,
@@ -22,7 +24,8 @@
           "teaser": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           "article_type": "story",
           "category": "event",
-          "date": "2021-03-06"
+          "image": "https://news-room-team-1.s3.eu-north-1.amazonaws.com/71soq248doj2pj36106zvhuhb4db?response-content-disposition=inline%3B%20filename%3D%22seed_image.png%22%3B%20filename%2A%3DUTF-8%27%27seed_image.png&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIKNDI6ICZXWA675Q%2F20210309%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20210309T182101Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=818e9fbc8864ba52978317b95a72ba6f6abbfaf9fb642cf36c471a9dde6770c0",
+          "date": "2021-03-09"
       }
   ]
 }
