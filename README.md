@@ -1,1 +1,3 @@
-# newsroom_jan_21_client_user
+# Get Local - Newsroom Challenge
+
+View site live over at: https://newsroom-client-user.netlify.app/
