@@ -9,6 +9,11 @@
       ],
       "category": "news",
       "location": "Gothenburg",
-      "date": "2021-03-07"
+      "image": "https://news-room-team-1.s3.eu-north-1.amazonaws.com/4p0fb8gt919fp8um1auzzyep9n2r?response-content-disposition=inline%3B%20filename%3D%22seed_image.png%22%3B%20filename%2A%3DUTF-8%27%27seed_image.png&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIKNDI6ICZXWA675Q%2F20210309%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20210309T182425Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=682feca6c91d0415b52a2307b95b201b897b2f32614dad459a67ae66c1777c42",
+      "date": "2021-03-09",
+      "author": {
+          "id": 1,
+          "name": "Lucas"
+      }
   }
 }

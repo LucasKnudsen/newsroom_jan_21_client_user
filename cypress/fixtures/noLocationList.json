@@ -6,7 +6,8 @@
           "teaser": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           "article_type": "experience",
           "category": "food",
-          "date": "2021-03-07"
+          "image": "https://news-room-team-1.s3.eu-north-1.amazonaws.com/3yhtkbb8mb3fe6iwi3imx8h7ebu7?response-content-disposition=inline%3B%20filename%3D%22seed_image.png%22%3B%20filename%2A%3DUTF-8%27%27seed_image.png&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIKNDI6ICZXWA675Q%2F20210309%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20210309T182407Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=b29ae35232f6b5bee2afa3a584d1633e6e7cf1a9481dbf30d5333fe618396c65",
+          "date": "2021-03-09"
       },
       {
           "id": 9,
@@ -14,7 +15,8 @@
           "teaser": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           "article_type": "experience",
           "category": "trip",
-          "date": "2021-03-07"
+          "image": "https://news-room-team-1.s3.eu-north-1.amazonaws.com/nej41a98o4j8xuaaxyf4z9hvdhpn?response-content-disposition=inline%3B%20filename%3D%22seed_image.png%22%3B%20filename%2A%3DUTF-8%27%27seed_image.png&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIKNDI6ICZXWA675Q%2F20210309%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20210309T182407Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=84959d68d63e9ad6c448dd3fa8c6fe067fcbbc7e6eca1a26074b42658225afeb",
+          "date": "2021-03-09"
       },
       {
           "id": 8,
@@ -22,7 +24,8 @@
           "teaser": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           "article_type": "experience",
           "category": "food",
-          "date": "2021-03-07"
+          "image": "https://news-room-team-1.s3.eu-north-1.amazonaws.com/amn9dyvy0yw28kgrgai8x48ma03c?response-content-disposition=inline%3B%20filename%3D%22seed_image.png%22%3B%20filename%2A%3DUTF-8%27%27seed_image.png&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIKNDI6ICZXWA675Q%2F20210309%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20210309T182407Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=a227b246a58f2f8f91a7bc0886bf6c7904824164ef5349e1c6e269d039b6aa63",
+          "date": "2021-03-09"
       },
       {
           "id": 7,
@@ -30,7 +33,8 @@
           "teaser": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           "article_type": "experience",
           "category": "trip",
-          "date": "2021-03-07"
+          "image": "https://news-room-team-1.s3.eu-north-1.amazonaws.com/k094c72jghvi8k7e1v414r39ox3c?response-content-disposition=inline%3B%20filename%3D%22seed_image.png%22%3B%20filename%2A%3DUTF-8%27%27seed_image.png&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIKNDI6ICZXWA675Q%2F20210309%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20210309T182407Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=2c687dd003b9ec9efa3d5cb9c5a7471860a57e546ecc03b7debde951595fcf2d",
+          "date": "2021-03-09"
       },
       {
           "id": 6,
@@ -38,7 +42,8 @@
           "teaser": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           "article_type": "experience",
           "category": "food",
-          "date": "2021-03-07"
+          "image": "https://news-room-team-1.s3.eu-north-1.amazonaws.com/b2piej8ws7on8l3udhq4exton2fg?response-content-disposition=inline%3B%20filename%3D%22seed_image.png%22%3B%20filename%2A%3DUTF-8%27%27seed_image.png&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIKNDI6ICZXWA675Q%2F20210309%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20210309T182407Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=913aeb3cc758a5458d643200e629f718c82b44aba06dfbea6e5d6ab0262e11a3",
+          "date": "2021-03-09"
       },
       {
           "id": 5,
@@ -46,7 +51,8 @@
           "teaser": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           "article_type": "story",
           "category": "news",
-          "date": "2021-03-07"
+          "image": "https://news-room-team-1.s3.eu-north-1.amazonaws.com/1r5wekkuyx0eob5pecb5pp2d74e5?response-content-disposition=inline%3B%20filename%3D%22seed_image.png%22%3B%20filename%2A%3DUTF-8%27%27seed_image.png&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIKNDI6ICZXWA675Q%2F20210309%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20210309T182407Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=5d1693d37a29af4cb1c4201fca7080068a1adafca878f1397dd7a63faeb13477",
+          "date": "2021-03-09"
       },
       {
           "id": 4,
@@ -54,7 +60,8 @@
           "teaser": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           "article_type": "story",
           "category": "event",
-          "date": "2021-03-07"
+          "image": "https://news-room-team-1.s3.eu-north-1.amazonaws.com/403hv724j60t8dqg7vfxbw4ee8i1?response-content-disposition=inline%3B%20filename%3D%22seed_image.png%22%3B%20filename%2A%3DUTF-8%27%27seed_image.png&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIKNDI6ICZXWA675Q%2F20210309%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20210309T182407Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=fbd348c2567b849df2c0299dcb0bc5d27ab9d1de369e2fd33665982d92524f82",
+          "date": "2021-03-09"
       },
       {
           "id": 3,
@@ -62,7 +69,8 @@
           "teaser": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           "article_type": "story",
           "category": "event",
-          "date": "2021-03-07"
+          "image": "https://news-room-team-1.s3.eu-north-1.amazonaws.com/jfjy5spx0f74jdw30ztvi4pjh3of?response-content-disposition=inline%3B%20filename%3D%22seed_image.png%22%3B%20filename%2A%3DUTF-8%27%27seed_image.png&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIKNDI6ICZXWA675Q%2F20210309%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20210309T182407Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=97d6b7b3e4d60612f8312b9a2cff4bad64a490834ccac687f3ed26bed3ca723d",
+          "date": "2021-03-09"
       },
       {
           "id": 2,
@@ -70,7 +78,8 @@
           "teaser": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           "article_type": "story",
           "category": "news",
-          "date": "2021-03-07"
+          "image": "https://news-room-team-1.s3.eu-north-1.amazonaws.com/4p0fb8gt919fp8um1auzzyep9n2r?response-content-disposition=inline%3B%20filename%3D%22seed_image.png%22%3B%20filename%2A%3DUTF-8%27%27seed_image.png&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIKNDI6ICZXWA675Q%2F20210309%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20210309T182407Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=3df0449455b408276f447afc798487d7b88d2a8789d62d2b72e14e15409399f7",
+          "date": "2021-03-09"
       },
       {
           "id": 1,
@@ -78,7 +87,8 @@
           "teaser": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           "article_type": "story",
           "category": "event",
-          "date": "2021-03-07"
+          "image": "https://news-room-team-1.s3.eu-north-1.amazonaws.com/71soq248doj2pj36106zvhuhb4db?response-content-disposition=inline%3B%20filename%3D%22seed_image.png%22%3B%20filename%2A%3DUTF-8%27%27seed_image.png&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIKNDI6ICZXWA675Q%2F20210309%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20210309T182407Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=389f1d863d1c6d327f72313e3f588e15b90b8cda6a2f4ea0f63e1015e327cd8d",
+          "date": "2021-03-09"
       }
   ],
   "message": "We weren't able to get your location. Enjoy our latest articles instead!"
