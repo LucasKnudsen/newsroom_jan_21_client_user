@@ -49,6 +49,7 @@ describe('Displays list of story articles', () => {
     })
 
     it('displays an error message', () => {
+      cy.wait(1000)
       cy.get('[data-cy="error-message"]').should('contain', 'Request failed with status code 500')
     })
   })

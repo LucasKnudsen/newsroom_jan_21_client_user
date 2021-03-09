@@ -48,6 +48,7 @@ describe('client displays single article', () => {
     })
 
     it('displays an error message', () => {
+      cy.wait(1000)
       cy.get('[data-cy="not-found"]').should('contain', 'Article not found.')
     })
     

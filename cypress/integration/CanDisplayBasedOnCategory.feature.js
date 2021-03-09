@@ -55,6 +55,7 @@ describe('can display articles based on category request', () => {
     })
 
     it('displays an error message', () => {
+      cy.wait(1000)
       cy.get('[data-cy="error-message"]').should('contain', 'Unfortunately we did not find any articles with this category.')
     })
   })
