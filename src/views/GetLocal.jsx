@@ -21,7 +21,7 @@ const GetLocal = () => {
           Experiences
           <Header.Subheader data-cy="your-location">{message}</Header.Subheader>
         </Header>
-        <HeroArticle article={experienceArticles.slice(0,1)} />
+        <HeroArticle article={experienceArticles[0]} />
         <Item.Group divided data-cy="experience-wrapper">
           <ArticleList articles={experienceArticles.slice(1)} />
         </Item.Group>
